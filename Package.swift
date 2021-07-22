@@ -4,18 +4,19 @@ import PackageDescription
 let package = Package(
     name: "FaceSDK",
     products: [
+        // .library(name: "FaceSDK", targets: ["FaceSDK-Target"])
         .library(name: "FaceSDK", targets: ["FaceSDK", "RegulaCommon"])
     ],
     targets: [
         .binaryTarget(
             name: "FaceSDK",
-            url: "https://pods.regulaforensics.com/RegulaCommon/face-sdk/0.0.1.zip",
-            checksum: "0cf35bc5626b81964269d4e8ffa9954fffdb87900883e686bab73f0dc83fc841"
+            url: "https://pods.regulaforensics.com/RegulaCommon/face-sdk/FaceSDK.xcframework.zip",
+            checksum: "9e302183b37b56f00bca52c843f2dce072d76deae8b90cae776261cf75d7f2fa"
         ),
         .binaryTarget(
             name: "RegulaCommon",
-            url: "https://pods.regulaforensics.com/RegulaCommon/regula-common/0.0.1.zip",
-            checksum: "2bbadce710ede2a4c5fc58991122b399ec18703aae9b59d00ae6a502aa7952fd"
+            url: "https://pods.regulaforensics.com/RegulaCommon/regula-common/RegulaCommon.xcframework.zip",
+            checksum: "9ef592c40d960420c0dba3c49e97f2f3071baaff60a1e00b2b9d99f6cf6d656a"
         ),
         // .target(
         //     name: "FaceSDK-Target",
