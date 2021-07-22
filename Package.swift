@@ -7,7 +7,7 @@ let package = Package(
         .library(name: "FaceSDK", targets: ["FaceSDKTarget"])
     ],
     dependencies: [
-        .package(name: "RegulaCommon", url: "https://github.com/pkondrashkov/common", .exact:("0.0.2")),
+        .package(name: "RegulaCommon", url: "https://github.com/pkondrashkov/common", .exact("0.0.2")),
     ],
     targets: [
         .binaryTarget(
